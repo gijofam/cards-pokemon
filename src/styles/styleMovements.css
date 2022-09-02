@@ -1,0 +1,12 @@
+.item-move{
+ border: 1px solid #E5E5E5;
+ border-radius: 15px;
+ background-color: #E5E5E5;
+ padding: 0 1em;
+
+}
+.item-move__info{
+ font-weight: 550;
+ margin: 7px;
+ /* margin: auto; */
+}

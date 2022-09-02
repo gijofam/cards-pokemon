@@ -1,0 +1,105 @@
+.card__stats{
+  width: 100%;
+  position: relative;
+}
+.card__stats__title{
+ padding:0.3em;
+}
+.card__stats__info{
+  position: absolute;
+  bottom: 2em;
+  right: 0;
+}
+.stats_bar_container{
+ width: 100%;
+ background-color: gray;
+ border-radius: 10px;
+}
+.stats__bar{
+ text-align: right;
+ padding: 0.5em;
+ color: white;
+ font-weight: bold;
+ border-radius: 10px;
+}
+.bar__porcentaje10{
+  background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje10  3s forwards 
+}
+.bar__porcentaje20{
+  background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje20 3s forwards
+}
+.bar__porcentaje30{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje30 3s forwards
+}
+.bar__porcentaje40{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje40 3s forwards 
+}
+.bar__porcentaje50{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje50 3s forwards
+}
+.bar__porcentaje60{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);;
+  animation: porcentaje60 3s forwards
+}
+.bar__porcentaje70{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje70 3s forwards
+}
+.bar__porcentaje80{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje80 3s forwards
+}
+.bar__porcentaje90{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje90 3s forwards
+}
+.bar__porcentaje100{
+   background: linear-gradient(90deg, #FCD676 -2.25%, #E6901E 133.18%);
+  animation: porcentaje100 3s forwards
+}
+
+@keyframes porcentaje10 {
+    0%{width:0;}
+    100%{width: 10%;}
+}
+@keyframes porcentaje20 {
+    0%{width:0;}
+    100%{width: 20%;}
+}
+@keyframes porcentaje30 {
+    0%{width:0;}
+    100%{width: 30%;}
+}
+@keyframes porcentaje40 {
+    0%{width:0;}
+    100%{width: 40%;}
+}
+@keyframes porcentaje50 {
+    0%{width:0;}
+    100%{width: 50%;}
+}
+@keyframes porcentaje60 {
+    0%{width:0;}
+    100%{width: 60%;}
+}
+@keyframes porcentaje70 {
+    0%{width:0;}
+    100%{width: 70%;}
+}
+@keyframes porcentaje80 {
+    0%{width:0;}
+    100%{width: 80%;}
+}
+@keyframes porcentaje90 {
+    0%{width:0;}
+    100%{width: 90%;}
+}
+@keyframes porcentaje100 {
+    0%{width:0;}
+    100%{width: 100%;}
+}
