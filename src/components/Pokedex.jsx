@@ -24,6 +24,7 @@ const Pokedex = () => {
   
 
 
+
   useEffect(() => {
     if(optionType !== 'All'){
       const url = `https://pokeapi.co/api/v2/type/${optionType}`
@@ -62,8 +63,7 @@ const Pokedex = () => {
     
   }, [pokeSearch,optionType])
    
-   console.log(pokedex)
-  //  console.log(optionType,optionType)
+  //  console.log(pokedex)
 
   return (
     <div className='pokedex-container' >

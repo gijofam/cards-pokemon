@@ -4,7 +4,7 @@ import ReactPaginate from 'react-paginate';
 import CardPokemon from './CardPokemon';
 
 const TestPaginate1 = ({pokemons}) => {
-    console.log(pokemons)  
+    // console.log(pokemons)  
       /******Aqui comienza la paginacion*****/
       // We start with an empty list of items.
     const [currentItems, setCurrentItems] = useState([]);
