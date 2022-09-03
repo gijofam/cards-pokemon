@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
 import BarStats from './pokemonDetails/BarStats'
 import Movement from './pokemonDetails/Movement'
+import PreviousBtn from './pokemonDetails/PreviousBtn'
 
 const PokedexDetails = () => {
 
@@ -80,6 +81,7 @@ const PokedexDetails = () => {
               }
         </div>
       </div>
+      <PreviousBtn/>
     </article>
   )
 }

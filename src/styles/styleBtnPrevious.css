@@ -1,0 +1,19 @@
+.previous{
+ width: 100px;
+ margin: 0;
+ position: relative;
+ bottom: 4em;
+ /* position: absolute; */
+}
+
+.btn{
+ color: white;
+ background-color: rgb(255,0,0,0.9);
+ border: none;
+ width: 70px;
+ height: 70px;
+ border-radius: 50%;
+ font-size: 18px;
+ font-weight: bold;
+ margin: 0;
+}

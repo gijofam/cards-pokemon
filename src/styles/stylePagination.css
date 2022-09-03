@@ -9,6 +9,7 @@
 /*estilos de la paginacion*/
 .container-paginate{
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .paginate__item{

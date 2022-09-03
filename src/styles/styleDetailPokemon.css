@@ -7,13 +7,13 @@ h1,h2,h3,h4,h5,p,li,ul{
  flex-direction: column;
  align-items: center;
  justify-content: center;
- /* text-align: center ; */
+ text-align: center ;
  position: relative;
  min-height: 100vh;
-
+ /* gap: 1em; */
 }
 .detail-pokemon-img{
- width: 30%;
+ width: 250px;
  z-index: 10;
  transition: transform 5s ease;
 }
@@ -88,6 +88,7 @@ h1,h2,h3,h4,h5,p,li,ul{
 .body__type__list{
  margin-top: 0.5em;
  display: flex;
+ flex-wrap: wrap;
  gap: 1em;
 }
 
@@ -233,6 +234,7 @@ h1,h2,h3,h4,h5,p,li,ul{
 /*********fin del footer de la img*****************/
 /************ stilos de Habilidades****************/
 .body__abilities{
+    margin-top: 0.25em;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -246,6 +248,7 @@ h1,h2,h3,h4,h5,p,li,ul{
 .body__abilities__list{
     margin-top: 0.5em;
     display: flex;
+    flex-wrap: wrap;
     gap: 1em;
 }
 .abilities__list-item{
@@ -281,12 +284,14 @@ h1,h2,h3,h4,h5,p,li,ul{
 
 .container-pokemon__movements{
     width: 100%;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
+    /* padding: 1em; */
     border: 1px solid #E5E5E5;
     box-shadow: 5px 5px 20px gray;
     margin-top: 1em;
     position: relative;
     bottom: 6.5em;
+    margin-bottom: 0; */
 }
 .movements__line{
  /* position: absolute; */
