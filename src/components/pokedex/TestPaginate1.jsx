@@ -7,7 +7,7 @@ const TestPaginate1 = ({pokemons}) => {
     // console.log(pokemons)  
       /******Aqui comienza la paginacion*****/
       // We start with an empty list of items.
-    const [currentItems, setCurrentItems] = useState([]);
+    const [currentItems, setCurrentItems] = useState(null);
     const [pageCount, setPageCount] = useState(0);
     // Here we use item offsets; we could also use page offsets
     // following the API or data you're working with.
@@ -23,8 +23,7 @@ const TestPaginate1 = ({pokemons}) => {
       // console.log(`Loading items from ${itemOffset} to ${endOffset}`);
       setCurrentItems(pokemons?.slice(itemOffset, endOffset));
       setPageCount(Math.ceil(pokemons?.length / itemsPerPage));
-    // }, [itemOffset, itemsPerPage, pokemons]);
-    }, [itemOffset, pokemons]);
+    }, [itemOffset,itemsPerPage, pokemons]);
   
     const handlePageClick = (event) => {
       // original
@@ -38,6 +37,10 @@ const TestPaginate1 = ({pokemons}) => {
     };
    
 
+    // const handlePageActive = () => {
+    //   setItemOffset(0);
+    //   itemsPerPage = 0;
+    // }
 
     return (
       <>
@@ -51,15 +54,17 @@ const TestPaginate1 = ({pokemons}) => {
          </div>
         <ReactPaginate
           breakLabel="..."
-          nextLabel=" >>"
+          nextLabel=">>"
           onPageChange={handlePageClick}
-          pageRangeDisplayed={5}
+          // pageRangeDisplayed={5}
           pageCount={pageCount}
           previousLabel="<<"
           renderOnZeroPageCount={null}
-          /* */
+          // initialPage={0} esto no muestra nada al renderizar por primera vez
+          // aqui estoy agregado 
+          // onPageActive = {handlePageActive}
+          // fin de agregado
           containerClassName='container-paginate'
-        //   pageClassName='paginate__item'
           pageLinkClassName='paginate__item'
           activeClassName='active-pag'
           previousLinkClassName='previous-pag'
