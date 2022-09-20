@@ -13,25 +13,32 @@ const TestPaginate1 = ({pokemons}) => {
     // following the API or data you're working with.
     const [itemOffset, setItemOffset] = useState(0);
     const itemsPerPage = 3
-    let endOffset = 0
+    // let endOffset = 0
+    // here added -gijofam
+    // let newOffset
     useEffect(() => {
       // Fetch items from another resources.
     //   const endOffset = itemOffset + itemsPerPage; *******esto modifique!!!!!
-       endOffset = itemOffset + itemsPerPage;
+      const endOffset = itemOffset + itemsPerPage;
       // console.log(`Loading items from ${itemOffset} to ${endOffset}`);
       setCurrentItems(pokemons?.slice(itemOffset, endOffset));
       setPageCount(Math.ceil(pokemons?.length / itemsPerPage));
-    }, [itemOffset, itemsPerPage, pokemons]);
+    // }, [itemOffset, itemsPerPage, pokemons]);
+    }, [itemOffset, pokemons]);
   
     const handlePageClick = (event) => {
+      // original
       const newOffset = (event.selected * itemsPerPage) % pokemons?.length;
-    //   const newOffset = (event.selected * itemsPerPage) - itemsPerPage;
+      //estoy es el modificado
+        // newOffset = (event.selected * itemsPerPage) % pokemons?.length;
       // console.log(
       //   `User requested page number ${event.selected}, which is offset ${newOffset}`
       // );
       setItemOffset(newOffset);
     };
-  
+   
+
+
     return (
       <>
         {/* <Items currentItems={currentItems} /> */}

@@ -11,6 +11,8 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+ background-color: rgb(255,255,255,0.6);
+
 }
 .paginate__item{
  padding: 1em 1.3em;

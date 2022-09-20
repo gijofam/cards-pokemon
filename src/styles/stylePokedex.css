@@ -17,11 +17,7 @@
  align-items: center;
 }
 .pokedex__header-info{
-    /* font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 24px; */
-    /* color: gray; */
+ color: white;
 }
 .pokedex__header-info span{
     color: #FE1936;
@@ -57,11 +53,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 .pokedex-select{
     margin-top: .6em;
     font-size: 25px;
-    
+    cursor: pointer;
 }
 .pokedex-select:hover{
     /* border: 1px solid #D93F3F; */
